@@ -1,0 +1,19 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+52,1,RR,RR,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,2,T,Temperatura aria,,°C,2025-10-27 18:00:00,10.0,45.842959,13.547246,Doberdò
+52,3,U,Igrometro,,%,2025-10-27 18:00:00,80.0,45.842959,13.547246,Doberdò
+52,5,Dv,Direzione vento,,°N,2025-10-27 18:00:00,42.0,45.842959,13.547246,Doberdò
+52,6,Vv,Velocità vento,,m/s,2025-10-27 18:00:00,2.6,45.842959,13.547246,Doberdò
+52,7,VvMax,Velocità vento massima,,m/s,2025-10-27 18:00:00,3.1,45.842959,13.547246,Doberdò
+52,8,DvMax,Direzione vento della velocità massima,,°N,2025-10-27 17:30:00,19.0,45.842959,13.547246,Doberdò
+52,30,P,Pluviometro,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,32,DvVett,Direzione vento vettoriale,,°N,2025-10-27 17:30:00,5.0,45.842959,13.547246,Doberdò
+52,33,VvVett,Velocità vento vettoriale,,m/s,2025-10-27 17:30:00,1.0,45.842959,13.547246,Doberdò
+52,52,Prec_5_min,Precipitazione 5 min,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,53,Prec_60_min,Precipitazione 60 min,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,54,Prec_3_ore,Precipitazione 3 ore,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,55,Prec_6_ore,Precipitazione 6 ore,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,56,Prec_12_ore,Precipitazione 12 ore,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò
+52,57,Prec_24_ore,Precipitazione 24 ore,,mm,2025-10-27 18:00:00,0.2,45.842959,13.547246,Doberdò
+52,58,Prec_48_ore,Precipitazione 48 ore,,mm,2025-10-27 18:00:00,0.2,45.842959,13.547246,Doberdò
+52,85,P_1h,Pioggia oraria,,mm,2025-10-27 18:00:00,0.0,45.842959,13.547246,Doberdò

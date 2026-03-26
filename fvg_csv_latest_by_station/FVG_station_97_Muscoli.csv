@@ -1,0 +1,2 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+97,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,0.64,45.835787,13.340433,Muscoli

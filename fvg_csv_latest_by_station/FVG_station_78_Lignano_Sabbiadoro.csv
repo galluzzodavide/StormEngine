@@ -1,0 +1,21 @@
+station_id;sensor_id;sensor_code;sensor_name;quantity;unit;dt;value;lat;lon;station_name
+78;1;RR;RR;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;2;T;Temperatura aria;;°C;27/10/2025 18:00;11.2;45.686.555;13.121.167;Lignano Sabbiadoro
+78;3;U;Igrometro;;%;27/10/2025 18:00;70.4;45.686.555;13.121.167;Lignano Sabbiadoro
+78;5;Dv;Direzione vento;;°N;27/10/2025 18:00;350.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;6;Vv;Velocità vento;;m/s;27/10/2025 18:00;0.9;45.686.555;13.121.167;Lignano Sabbiadoro
+78;7;VvMax;Velocità vento massima;;m/s;27/10/2025 18:00;1.2;45.686.555;13.121.167;Lignano Sabbiadoro
+78;8;DvMax;Direzione vento della velocità massima;;°N;27/10/2025 18:00;15.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;17;B;Barometro;;hPa;27/10/2025 18:00;1007.7;45.686.555;13.121.167;Lignano Sabbiadoro
+78;18;RG;Radiazione globale;;W/m2;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;30;P;Pluviometro;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;32;DvVett;Direzione vento vettoriale;;°N;27/10/2025 18:00;34.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;33;VvVett;Velocità vento vettoriale;;m/s;27/10/2025 18:00;0.8;45.686.555;13.121.167;Lignano Sabbiadoro
+78;52;Prec_5_min;Precipitazione 5 min;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;53;Prec_60_min;Precipitazione 60 min;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;54;Prec_3_ore;Precipitazione 3 ore;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;55;Prec_6_ore;Precipitazione 6 ore;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;56;Prec_12_ore;Precipitazione 12 ore;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;57;Prec_24_ore;Precipitazione 24 ore;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;58;Prec_48_ore;Precipitazione 48 ore;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro
+78;85;P_1h;Pioggia oraria;;mm;27/10/2025 18:00;0.0;45.686.555;13.121.167;Lignano Sabbiadoro

@@ -1,0 +1,13 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+594,1,RR,RR,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,2,T,Temperatura aria,,°C,2025-10-25 21:15:00,11.3,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,3,U,Igrometro,,%,2025-10-25 21:15:00,96.4,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,85,P_1h,Pioggia oraria,,mm,2025-10-25 21:00:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,30,P,Pluviometro,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,52,Prec_5_min,Precipitazione 5 min,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,53,Prec_60_min,Precipitazione 60 min,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,54,Prec_3_ore,Precipitazione 3 ore,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,55,Prec_6_ore,Precipitazione 6 ore,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,56,Prec_12_ore,Precipitazione 12 ore,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,57,Prec_24_ore,Precipitazione 24 ore,,mm,2025-10-25 21:15:00,0.0,45.93393,13.59649,Gorizia Consorzio di Bonifica
+594,58,Prec_48_ore,Precipitazione 48 ore,,mm,2025-10-25 21:15:00,29.6666666666667,45.93393,13.59649,Gorizia Consorzio di Bonifica

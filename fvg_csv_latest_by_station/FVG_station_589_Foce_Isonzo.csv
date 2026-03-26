@@ -1,0 +1,9 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+589,22,Tm,Temperatura mare,,°C,2025-10-27 17:30:00,16.9,45.761667,13.496333,Foce Isonzo
+589,24,IDRO,Idrometro,,m,2025-10-27 17:30:00,-0.09,45.761667,13.496333,Foce Isonzo
+589,41,Q_tot,Portata_totale,,mc/s,2025-10-27 17:30:00,114.45,45.761667,13.496333,Foce Isonzo
+589,108,Q_sup,Portata_superiore,,mc/s,2025-10-27 17:30:00,111.7,45.761667,13.496333,Foce Isonzo
+589,109,Q_inf,Portata_inferiore,,mc/s,2025-10-27 17:30:00,2.8,45.761667,13.496333,Foce Isonzo
+589,110,CV_med,Corrente_media,,m/s,2025-10-27 17:30:00,0.1,45.761667,13.496333,Foce Isonzo
+589,111,CV_sup,Corrente_superiore,,m/s,2025-10-27 17:30:00,0.2,45.761667,13.496333,Foce Isonzo
+589,112,CV_inf,Corrente_inferiore,,m/s,2025-10-27 17:30:00,0.0,45.761667,13.496333,Foce Isonzo

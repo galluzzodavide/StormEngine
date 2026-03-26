@@ -1,0 +1,14 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+68,1,RR,RR,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,0.253333333333333,45.683121,13.38345,Grado Marea
+68,30,P,Pluviometro,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,52,Prec_5_min,Precipitazione 5 min,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,53,Prec_60_min,Precipitazione 60 min,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,54,Prec_3_ore,Precipitazione 3 ore,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,55,Prec_6_ore,Precipitazione 6 ore,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,56,Prec_12_ore,Precipitazione 12 ore,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,57,Prec_24_ore,Precipitazione 24 ore,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,58,Prec_48_ore,Precipitazione 48 ore,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,85,P_1h,Pioggia oraria,,mm,2025-10-27 18:00:00,0.0,45.683121,13.38345,Grado Marea
+68,86,LIV_MARE_IGM42,Livello mare IGM42,,m,2025-10-27 18:00:00,0.0233333333333333,45.683121,13.38345,Grado Marea
+68,81,MISxG,Misure xG,,sts,2025-10-27 18:00:00,1.0,45.683121,13.38345,Grado Marea
