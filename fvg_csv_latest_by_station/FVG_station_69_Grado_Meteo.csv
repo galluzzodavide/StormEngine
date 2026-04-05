@@ -1,11 +1,11 @@
 station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-69,2,T,Temperatura aria,,°C,2025-10-27 18:00:00,14.2533333333333,45.680255,13.373272,Grado Meteo
-69,3,U,Igrometro,,%,2025-10-27 18:00:00,67.8466666666667,45.680255,13.373272,Grado Meteo
-69,5,Dv,Direzione vento,,°N,2025-10-27 18:00:00,347.266666666667,45.680255,13.373272,Grado Meteo
-69,6,Vv,Velocità vento,,m/s,2025-10-27 18:00:00,2.3,45.680255,13.373272,Grado Meteo
-69,7,VvMax,Velocità vento massima,,m/s,2025-10-27 18:00:00,3.1,45.680255,13.373272,Grado Meteo
-69,8,DvMax,Direzione vento della velocità massima,,°N,2025-10-27 18:00:00,346.4,45.680255,13.373272,Grado Meteo
-69,17,B,Barometro,,hPa,2025-10-27 18:00:00,1006.41333333333,45.680255,13.373272,Grado Meteo
-69,32,DvVett,Direzione vento vettoriale,,°N,2025-10-27 18:00:00,348.466666666667,45.680255,13.373272,Grado Meteo
-69,33,VvVett,Velocità vento vettoriale,,m/s,2025-10-27 18:00:00,2.25333333333333,45.680255,13.373272,Grado Meteo
-69,81,MISxG,Misure xG,,sts,2025-10-27 18:00:00,1.0,45.680255,13.373272,Grado Meteo
+69,81,MISxG,Misure xG,,sts,2026-03-30 16:00:00,1.0,45.680255,13.373272,Grado Meteo
+69,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,4.76666666666667,45.680255,13.373272,Grado Meteo
+69,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,104.866666666667,45.680255,13.373272,Grado Meteo
+69,17,B,Barometro,,hPa,2026-03-30 16:00:00,1010.13333333333,45.680255,13.373272,Grado Meteo
+69,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,104.0,45.680255,13.373272,Grado Meteo
+69,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,6.2,45.680255,13.373272,Grado Meteo
+69,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,4.57333333333333,45.680255,13.373272,Grado Meteo
+69,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,106.666666666667,45.680255,13.373272,Grado Meteo
+69,3,U,Igrometro,,%,2026-03-30 16:00:00,63.4466666666667,45.680255,13.373272,Grado Meteo
+69,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,12.1333333333333,45.680255,13.373272,Grado Meteo

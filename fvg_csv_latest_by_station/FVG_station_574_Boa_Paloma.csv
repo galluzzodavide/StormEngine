@@ -1,12 +1,12 @@
 station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-574,2,T,Temperatura aria,,°C,2025-10-27 18:00:00,14.6466666666667,45.61858,13.5653,Boa Paloma
-574,3,U,Igrometro,,%,2025-10-27 18:00:00,58.1066666666667,45.61858,13.5653,Boa Paloma
-574,5,Dv,Direzione vento,,°N,2025-10-27 18:00:00,186.533333333333,45.61858,13.5653,Boa Paloma
-574,6,Vv,Velocità vento,,m/s,2025-10-27 18:00:00,1.02,45.61858,13.5653,Boa Paloma
-574,7,VvMax,Velocità vento massima,,m/s,2025-10-27 18:00:00,3.0,45.61858,13.5653,Boa Paloma
-574,8,DvMax,Direzione vento della velocità massima,,°N,2025-10-27 18:00:00,116.466666666667,45.61858,13.5653,Boa Paloma
-574,17,B,Barometro,,hPa,2025-10-27 18:00:00,1005.6,45.61858,13.5653,Boa Paloma
-574,18,RG,Radiazione globale,,W/m2,2025-10-27 18:00:00,0.0,45.61858,13.5653,Boa Paloma
-574,32,DvVett,Direzione vento vettoriale,,°N,2025-10-27 18:00:00,139.333333333333,45.61858,13.5653,Boa Paloma
-574,33,VvVett,Velocità vento vettoriale,,m/s,2025-10-27 18:00:00,1.01333333333333,45.61858,13.5653,Boa Paloma
-574,81,MISxG,Misure xG,,sts,2025-10-27 18:00:00,1.0,45.61858,13.5653,Boa Paloma
+574,81,MISxG,Misure xG,,sts,2026-03-30 16:00:00,1.0,45.61858,13.5653,Boa Paloma
+574,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,3.04,45.61858,13.5653,Boa Paloma
+574,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,105.266666666667,45.61858,13.5653,Boa Paloma
+574,18,RG,Radiazione globale,,W/m2,2026-03-30 16:00:00,56.7333333333333,45.61858,13.5653,Boa Paloma
+574,17,B,Barometro,,hPa,2026-03-30 16:00:00,1010.0,45.61858,13.5653,Boa Paloma
+574,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,104.533333333333,45.61858,13.5653,Boa Paloma
+574,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,3.6,45.61858,13.5653,Boa Paloma
+574,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,3.04,45.61858,13.5653,Boa Paloma
+574,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,105.2,45.61858,13.5653,Boa Paloma
+574,3,U,Igrometro,,%,2026-03-30 16:00:00,62.5666666666667,45.61858,13.5653,Boa Paloma
+574,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,12.0533333333333,45.61858,13.5653,Boa Paloma

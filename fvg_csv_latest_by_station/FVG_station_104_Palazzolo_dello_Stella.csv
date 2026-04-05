@@ -1,2 +1,0 @@
-station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-104,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,-0.93,45.803232,13.074126,Palazzolo dello Stella

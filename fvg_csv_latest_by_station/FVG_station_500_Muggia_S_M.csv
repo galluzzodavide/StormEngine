@@ -1,0 +1,8 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+500,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,1.85333333333333,45.610448,13.752571,Muggia S+M
+500,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,131.2,45.610448,13.752571,Muggia S+M
+500,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,131.4,45.610448,13.752571,Muggia S+M
+500,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,2.6,45.610448,13.752571,Muggia S+M
+500,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,1.85333333333333,45.610448,13.752571,Muggia S+M
+500,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,131.266666666667,45.610448,13.752571,Muggia S+M
+500,18,RG,Radiazione globale,,W/m2,2026-03-30 16:00:00,226.5,45.610448,13.752571,Muggia S+M

@@ -1,14 +1,16 @@
 station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-92,2,T,Temperatura aria,,°C,2025-10-27 18:00:00,13.2333333333333,45.780302,13.54963,Monfalcone
-92,3,U,Igrometro,,%,2025-10-27 18:00:00,70.92,45.780302,13.54963,Monfalcone
-92,17,B,Barometro,,hPa,2025-10-27 18:00:00,1006.91333333333,45.780302,13.54963,Monfalcone
-92,18,RG,Radiazione globale,,W/m2,2025-10-27 18:00:00,0.0,45.780302,13.54963,Monfalcone
-92,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,-0.0266666666666667,45.780302,13.54963,Monfalcone
-92,86,LIV_MARE_IGM42,Livello mare IGM42,,m,2025-10-27 18:00:00,-0.0266666666666667,45.780302,13.54963,Monfalcone
-92,5,Dv,Direzione vento,,°N,2025-10-27 18:00:00,234.6,45.780302,13.54963,Monfalcone
-92,6,Vv,Velocità vento,,m/s,2025-10-27 18:00:00,2.10666666666667,45.780302,13.54963,Monfalcone
-92,7,VvMax,Velocità vento massima,,m/s,2025-10-27 18:00:00,3.2,45.780302,13.54963,Monfalcone
-92,8,DvMax,Direzione vento della velocità massima,,°N,2025-10-27 18:00:00,259.333333333333,45.780302,13.54963,Monfalcone
-92,81,MISxG,Misure xG,,sts,2025-10-27 18:00:00,1.0,45.780302,13.54963,Monfalcone
-92,32,DvVett,Direzione vento vettoriale,,°N,2025-10-27 18:00:00,259.466666666667,45.780302,13.54963,Monfalcone
-92,33,VvVett,Velocità vento vettoriale,,m/s,2025-10-27 18:00:00,2.08666666666667,45.780302,13.54963,Monfalcone
+92,49,SCAR,Corrente di scarica,,mA,2026-03-30 16:00:00,95.0,45.780302,13.54963,Monfalcone
+92,48,CAR,Corrente di carica,,mA,2026-03-30 16:00:00,149.0,45.780302,13.54963,Monfalcone
+92,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,4.45333333333333,45.780302,13.54963,Monfalcone
+92,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,145.2,45.780302,13.54963,Monfalcone
+92,81,MISxG,Misure xG,,sts,2026-03-30 16:00:00,1.0,45.780302,13.54963,Monfalcone
+92,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,145.333333333333,45.780302,13.54963,Monfalcone
+92,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,5.5,45.780302,13.54963,Monfalcone
+92,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,4.57333333333333,45.780302,13.54963,Monfalcone
+92,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,145.666666666667,45.780302,13.54963,Monfalcone
+92,86,LIV_MARE_IGM42,Livello mare IGM42,,m,2026-03-30 16:00:00,-0.0333333333333333,45.780302,13.54963,Monfalcone
+92,24,IDRO,Idrometro,,m,2026-03-30 16:00:00,-0.0333333333333333,45.780302,13.54963,Monfalcone
+92,18,RG,Radiazione globale,,W/m2,2026-03-30 16:00:00,188.286666666667,45.780302,13.54963,Monfalcone
+92,17,B,Barometro,,hPa,2026-03-30 16:00:00,1010.18666666667,45.780302,13.54963,Monfalcone
+92,3,U,Igrometro,,%,2026-03-30 16:00:00,61.9933333333333,45.780302,13.54963,Monfalcone
+92,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,11.8466666666667,45.780302,13.54963,Monfalcone

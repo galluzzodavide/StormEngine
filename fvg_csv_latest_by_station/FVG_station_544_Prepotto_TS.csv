@@ -1,0 +1,16 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+544,49,SCAR,Corrente di scarica,,mA,2026-03-30 16:00:00,35.0,45.760264,13.692423,Prepotto_TS
+544,48,CAR,Corrente di carica,,mA,2026-03-30 16:00:00,7.0,45.760264,13.692423,Prepotto_TS
+544,85,P_1h,Pioggia oraria,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,30,P,Pluviometro,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,4,BF,Bagnatura fogliare,,min,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS
+544,3,U,Igrometro,,%,2026-03-30 16:00:00,46.4,45.760264,13.692423,Prepotto_TS
+544,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,11.8,45.760264,13.692423,Prepotto_TS
+544,1,RR,RR,,mm,2026-03-30 16:00:00,0.0,45.760264,13.692423,Prepotto_TS

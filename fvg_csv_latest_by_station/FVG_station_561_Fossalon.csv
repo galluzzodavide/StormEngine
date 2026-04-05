@@ -1,0 +1,31 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+561,81,MISxG,Misure xG,,sts,2026-03-30 15:45:00,1.0,45.714761,13.45882,Fossalon
+561,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,37,Vv2vett,Velocità vento 2 metri vett,,m/s,2026-03-30 15:45:00,1.71333333333333,45.714761,13.45882,Fossalon
+561,36,Dv2vett,Direzione vento 2 metri vett,,°N,2026-03-30 15:45:00,127.866666666667,45.714761,13.45882,Fossalon
+561,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 15:45:00,2.72666666666667,45.714761,13.45882,Fossalon
+561,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 15:45:00,128.0,45.714761,13.45882,Fossalon
+561,30,P,Pluviometro,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon
+561,21,T-10,Temperatura -10,,°C,2026-03-30 15:45:00,9.8,45.714761,13.45882,Fossalon
+561,20,T0,Temperatura 0,,°C,2026-03-30 15:45:00,12.6333333333333,45.714761,13.45882,Fossalon
+561,19,T50,Temperatura 50,,°C,2026-03-30 15:45:00,12.1266666666667,45.714761,13.45882,Fossalon
+561,18,RG,Radiazione globale,,W/m2,2026-03-30 15:45:00,139.253333333333,45.714761,13.45882,Fossalon
+561,17,B,Barometro,,hPa,2026-03-30 16:00:00,1010.41333333333,45.714761,13.45882,Fossalon
+561,16,Dv2max,Direzione vento della velocità massima 2 metri,,°N,2026-03-30 16:00:00,121.133333333333,45.714761,13.45882,Fossalon
+561,15,Vv2max,Velocità vento massima 2 metri,,m/s,2026-03-30 16:00:00,2.32,45.714761,13.45882,Fossalon
+561,14,Vv2,Velocità vento 2 metri,,m/s,2026-03-30 16:00:00,1.50666666666667,45.714761,13.45882,Fossalon
+561,13,Dv2,Direzione vento 2 metri,,°N,2026-03-30 16:00:00,125.2,45.714761,13.45882,Fossalon
+561,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,125.933333333333,45.714761,13.45882,Fossalon
+561,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,4.6,45.714761,13.45882,Fossalon
+561,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,2.65333333333333,45.714761,13.45882,Fossalon
+561,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,125.2,45.714761,13.45882,Fossalon
+561,4,BF,Bagnatura fogliare,,min,2026-03-30 16:00:00,0.0,45.714761,13.45882,Fossalon
+561,3,U,Igrometro,,%,2026-03-30 16:00:00,62.3733333333333,45.714761,13.45882,Fossalon
+561,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,12.12,45.714761,13.45882,Fossalon
+561,1,RR,RR,,mm,2026-03-30 15:45:00,0.0,45.714761,13.45882,Fossalon

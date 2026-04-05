@@ -1,0 +1,16 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+545,49,SCAR,Corrente di scarica,,mA,2026-03-30 16:00:00,34.0,45.702031,13.729317,Contovello
+545,48,CAR,Corrente di carica,,mA,2026-03-30 16:00:00,1.0,45.702031,13.729317,Contovello
+545,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 15:45:00,0.0,45.702031,13.729317,Contovello
+545,30,P,Pluviometro,,mm,2026-03-30 16:00:00,0.0,45.702031,13.729317,Contovello
+545,18,RG,Radiazione globale,,W/m2,2026-03-30 16:00:00,213.1,45.702031,13.729317,Contovello
+545,4,BF,Bagnatura fogliare,,min,2026-03-30 16:00:00,0.0,45.702031,13.729317,Contovello
+545,3,U,Igrometro,,%,2026-03-30 16:00:00,43.5,45.702031,13.729317,Contovello
+545,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,12.5,45.702031,13.729317,Contovello
+545,1,RR,RR,,mm,2026-03-30 16:00:00,0.0,45.702031,13.729317,Contovello

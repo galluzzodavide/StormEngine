@@ -1,4 +1,4 @@
 station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-77,22,Tm,Temperatura mare,,°C,2025-10-27 18:00:00,15.2,45.697699,13.143481,Lignano marea
-77,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,0.00333333333333333,45.697699,13.143481,Lignano marea
-77,86,LIV_MARE_IGM42,Livello mare IGM42,,m,2025-10-27 18:00:00,0.00333333333333333,45.697699,13.143481,Lignano marea
+77,86,LIV_MARE_IGM42,Livello mare IGM42,,m,2026-03-30 16:00:00,-0.0666666666666667,45.697699,13.143481,Lignano marea
+77,24,IDRO,Idrometro,,m,2026-03-30 16:00:00,-0.0666666666666667,45.697699,13.143481,Lignano marea
+77,22,Tm,Temperatura mare,,°C,2026-03-30 16:00:00,12.6,45.697699,13.143481,Lignano marea

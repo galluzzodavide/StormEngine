@@ -1,0 +1,11 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+213,81,MISxG,Misure xG,,sts,2026-03-30 16:00:00,1.0,45.701878,13.147102,Lignano
+213,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,5.9,45.701878,13.147102,Lignano
+213,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,123.4,45.701878,13.147102,Lignano
+213,17,B,Barometro,,hPa,2026-03-30 16:00:00,1009.84,45.701878,13.147102,Lignano
+213,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,123.133333333333,45.701878,13.147102,Lignano
+213,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,6.8,45.701878,13.147102,Lignano
+213,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,5.91333333333333,45.701878,13.147102,Lignano
+213,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,123.466666666667,45.701878,13.147102,Lignano
+213,3,U,Igrometro,,%,2026-03-30 16:00:00,62.4733333333333,45.701878,13.147102,Lignano
+213,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,11.8466666666667,45.701878,13.147102,Lignano

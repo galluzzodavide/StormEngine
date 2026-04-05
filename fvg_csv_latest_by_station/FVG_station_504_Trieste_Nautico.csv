@@ -1,0 +1,21 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+504,81,MISxG,Misure xG,,sts,2026-03-30 16:00:00,1.0,45.647373,13.764613,Trieste Nautico
+504,85,P_1h,Pioggia oraria,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,2.06666666666667,45.647373,13.764613,Trieste Nautico
+504,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,70.4666666666667,45.647373,13.764613,Trieste Nautico
+504,30,P,Pluviometro,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico
+504,17,B,Barometro,,hPa,2026-03-30 16:00:00,1006.58,45.647373,13.764613,Trieste Nautico
+504,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,91.6,45.647373,13.764613,Trieste Nautico
+504,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,4.4,45.647373,13.764613,Trieste Nautico
+504,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,2.18666666666667,45.647373,13.764613,Trieste Nautico
+504,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,70.4,45.647373,13.764613,Trieste Nautico
+504,3,U,Igrometro,,%,2026-03-30 16:00:00,41.0866666666667,45.647373,13.764613,Trieste Nautico
+504,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,13.9066666666667,45.647373,13.764613,Trieste Nautico
+504,1,RR,RR,,mm,2026-03-30 16:00:00,0.0,45.647373,13.764613,Trieste Nautico

@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 FVG – latest per sensore → CSV per stazione (coastal only)
-Usa i path e le strutture del tuo Swagger (risposte wrappate).
+Aggiornato per salvare anche un unico CSV aggregato con tutte le stazioni.
 """
 
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 import requests
 import pandas as pd
@@ -25,14 +25,27 @@ BASE = "https://monitor.protezionecivile.fvg.it"
 API  = f"{BASE}/api"
 OUT_DIR = Path("./fvg_csv_latest_by_station")
 
-# Poligono costiero (lon,lat) semplificato;
 COASTAL_POLYGON = [
-    [12.900, 45.60], [13.650, 45.60],
-    [13.900, 45.70], [13.900, 45.90],
-    [12.900, 45.90], [12.900, 45.60]
+    # --- LATO TERRAFERMA (Passa a filo delle spiagge) ---
+    [13.050, 45.650], # Ovest di Lignano (Mare)
+    [13.130, 45.705], # Nord di Lignano Sabbiadoro (Esclude Aprilia Marittima)
+    [13.300, 45.710], # Nord delle isole lagunari (Marano)
+    [13.450, 45.710], # Nord di Grado (Taglia fuori Cervignano e Aquileia)
+    [13.550, 45.795], # Nord della costa di Monfalcone
+    [13.680, 45.780], # Nord di Duino/Aurisina (Taglia fuori il Carso)
+    [13.780, 45.680], # Est di Trieste Centro (Tiene il porto, esclude la collina)
+    [13.820, 45.580], # Est di Muggia (Confine Sloveno)
+    
+    # --- LATO MARE (Chiusura a Sud) ---
+    [13.600, 45.500], # In mezzo al Golfo di Trieste
+    [13.050, 45.500], # In mare aperto a sud di Lignano
+    
+    # Chiusura del poligono
+    [13.050, 45.650]
 ]
-# Fallback bbox (lon_min, lat_min, lon_max, lat_max)
-BBOX = (12.8, 45.5, 14.0, 46.0)
+
+# Fallback bbox focalizzato SOLO sulla striscia costiera
+BBOX = (13.05, 45.55, 13.85, 45.80)
 
 REQ_TIMEOUT = (15, 60)          # (connect, read)
 PAUSE_BETWEEN_CALLS_SEC = 0.12  # rate limit gentile
@@ -66,50 +79,34 @@ def is_in_coastal_area(lon: Optional[float], lat: Optional[float]) -> bool:
     x1, y1, x2, y2 = BBOX
     return (x1 <= lon <= x2) and (y1 <= lat <= y2)
 
-# -------------------- API wrapper (Swagger-based) --------------------
+# -------------------- API wrapper --------------------
 def fetch_stations() -> pd.DataFrame:
-    """
-    GET /stations  → {"result":"OK","stations":[Station,...]}
-    Station: id, code, name, lat, lon, alt, status
-    """
     j = get_json(f"{API}/stations")
     stations = j.get("stations") if isinstance(j, dict) else None
     if not isinstance(stations, list):
         return pd.DataFrame(columns=["id","code","name","lat","lon","alt","status"])
     df = pd.DataFrame(stations)
-    # normalizza nomi attesi
     for c in ("lat","lon","alt"):
         if c in df.columns:
             df[c] = pd.to_numeric(df[c], errors="coerce")
     return df
 
 def fetch_station_sensors(station_id: int) -> pd.DataFrame:
-    """
-    GET /stations/{stationId}/sensors → {"sensors":[SensorWithStatus,...]}
-    SensorWithStatus: id, station_id, code, name, quantity, unit, status
-    """
     j = get_json(f"{API}/stations/{station_id}/sensors")
     sensors = j.get("sensors") if isinstance(j, dict) else None
     if not isinstance(sensors, list):
         return pd.DataFrame(columns=["id","station_id","code","name","quantity","unit","status"])
     df = pd.DataFrame(sensors)
-    # assicura station_id valorizzato
     if "station_id" not in df.columns:
         df["station_id"] = station_id
     return df
 
 def fetch_latest_station_sensor(station_id: int, sensor_id: int) -> pd.DataFrame:
-    """
-    GET /stations/{stationId}/sensors/{sensorId}/measures/latest
-    → {"measures":[Measure,...]}
-    Measure: station_id, sensor_id, lat, lon, dt, value
-    """
     j = get_json(f"{API}/stations/{station_id}/sensors/{sensor_id}/measures/latest")
     measures = j.get("measures") if isinstance(j, dict) else None
     if not isinstance(measures, list):
         return pd.DataFrame(columns=["station_id","sensor_id","lat","lon","dt","value"])
     df = pd.DataFrame(measures)
-    # garantisci colonne
     for col, val in (("station_id", station_id), ("sensor_id", sensor_id)):
         if col not in df.columns:
             df[col] = val
@@ -131,7 +128,10 @@ print(f"Stazioni costiere selezionate: {len(df_cost)}")
 
 saved, errors = 0, []
 
-# 3) Per ciascuna stazione costiera → sensori → latest → CSV per stazione
+# >>> NUOVO: Lista per accumulare tutti i dataframe di tutte le stazioni <<<
+tutte_le_misure_fvg = []
+
+# 3) Per ciascuna stazione costiera → sensori → latest → CSV
 for _, s in df_cost.iterrows():
     sid = int(s["id"])
     sname = s.get("name") or f"station_{sid}"
@@ -154,12 +154,12 @@ for _, s in df_cost.iterrows():
             df_latest = fetch_latest_station_sensor(sid, sensor_id)
             if df_latest.empty:
                 continue
-            # filtro costa sulle coordinate della misura (se presenti)
+            
             if {"lat","lon"}.issubset(df_latest.columns):
                 df_latest = df_latest[df_latest.apply(lambda r: is_in_coastal_area(r["lon"], r["lat"]), axis=1)]
                 if df_latest.empty:
                     continue
-            # arricchisci con metadati sensore
+            
             df_latest["sensor_code"] = row.get("code")
             df_latest["sensor_name"] = row.get("name")
             df_latest["quantity"] = row.get("quantity")
@@ -173,11 +173,13 @@ for _, s in df_cost.iterrows():
         print(f"(i) Nessuna misura latest costiera per stazione {sid} ({sname})")
         continue
 
+    # Unisce le misurazioni di questa specifica stazione
     df_out = pd.concat(latest_rows, ignore_index=True)
     preferred = ["station_id","sensor_id","sensor_code","sensor_name","quantity","unit","dt","value","lat","lon"]
     cols = preferred + [c for c in df_out.columns if c not in preferred]
     df_out = df_out.reindex(columns=cols)
 
+    # Salva il CSV singolo
     base = f"FVG_station_{sanitize_filename(str(sid))}"
     if scode: base += f"_{sanitize_filename(str(scode))}"
     base += f"_{sanitize_filename(str(sname))}"
@@ -185,9 +187,30 @@ for _, s in df_cost.iterrows():
     df_out.to_csv(fpath, index=False, encoding="utf-8")
     saved += 1
     print(f"✔ Saved {fpath.name} rows={len(df_out)}")
+    
+    # >>> NUOVO: Aggiunge il dataframe della stazione alla lista globale <<<
+    tutte_le_misure_fvg.append(df_out)
 
-print(f"Done. CSV per stazione salvati: {saved}. Errori: {len(errors)}")
+print(f"\nDone. CSV singoli salvati: {saved}. Errori: {len(errors)}")
+
+# ==========================================
+# >>> NUOVO: SALVATAGGIO CSV AGGREGATO FVG <<<
+# ==========================================
+if tutte_le_misure_fvg:
+    print("\nCreazione file aggregato unico in corso...")
+    df_fvg_totale = pd.concat(tutte_le_misure_fvg, ignore_index=True)
+    
+    # Riordina per stazione e timestamp
+    if "dt" in df_fvg_totale.columns:
+        df_fvg_totale.sort_values(by=["station_id", "dt"], inplace=True)
+        
+    percorso_aggregato = OUT_DIR / "FVG_coastal_latest_AGGREGATED.csv"
+    df_fvg_totale.to_csv(percorso_aggregato, index=False, encoding="utf-8")
+    print(f"SUCCESSO: Salvato file aggregato globale -> {percorso_aggregato.name} (Totale righe: {len(df_fvg_totale)})")
+else:
+    print("\nNessun dato valido estratto, impossibile creare il file aggregato.")
+
 if errors:
-    print("Alcuni errori (primi 8):")
+    print("\nAlcuni errori (primi 8):")
     for item, err in errors[:8]:
         print(" -", item, "→", err)

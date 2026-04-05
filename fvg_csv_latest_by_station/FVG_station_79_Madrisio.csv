@@ -1,7 +1,0 @@
-station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-79,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,0.85,45.860782,12.975227,Madrisio
-79,48,CAR,Corrente di carica,,mA,2025-10-27 18:00:00,0.0,45.860782,12.975227,Madrisio
-79,49,SCAR,Corrente di scarica,,mA,2025-10-27 18:00:00,192.0,45.860782,12.975227,Madrisio
-79,25,IDRO_2,Idrometro_2,,m,2025-10-27 18:00:00,0.85,45.860782,12.975227,Madrisio
-79,26,IDRO_3,Idrometro_3,,m,2025-10-27 18:00:00,1.19,45.860782,12.975227,Madrisio
-79,137,VbattR2,Batteria remota 2,,Volt,2025-10-27 18:00:00,13.0,45.860782,12.975227,Madrisio

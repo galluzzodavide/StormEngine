@@ -1,0 +1,13 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+95,85,P_1h,Pioggia oraria,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,30,P,Pluviometro,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia
+95,3,U,Igrometro,,%,2026-03-30 16:00:00,50.6,45.600676,13.775738,Muggia
+95,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,13.3,45.600676,13.775738,Muggia
+95,1,RR,RR,,mm,2026-03-30 16:00:00,0.0,45.600676,13.775738,Muggia

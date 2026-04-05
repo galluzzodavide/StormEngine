@@ -1,0 +1,16 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+162,49,SCAR,Corrente di scarica,,mA,2026-03-30 16:00:00,114.0,45.765502,13.686825,San Pelagio
+162,48,CAR,Corrente di carica,,mA,2026-03-30 16:00:00,161.0,45.765502,13.686825,San Pelagio
+162,3,U,Igrometro,,%,2026-03-30 16:00:00,46.1,45.765502,13.686825,San Pelagio
+162,85,P_1h,Pioggia oraria,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,30,P,Pluviometro,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,4,BF,Bagnatura fogliare,,min,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio
+162,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,11.9,45.765502,13.686825,San Pelagio
+162,1,RR,RR,,mm,2026-03-30 16:00:00,0.0,45.765502,13.686825,San Pelagio

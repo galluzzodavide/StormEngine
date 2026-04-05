@@ -1,0 +1,2 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+533,22,Tm,Temperatura mare,,°C,2026-03-30 16:00:00,12.1666666666667,45.67139,13.39655,Grado mare

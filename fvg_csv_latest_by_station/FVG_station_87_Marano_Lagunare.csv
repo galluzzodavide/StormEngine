@@ -1,5 +1,0 @@
-station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
-87,24,IDRO,Idrometro,,m,2025-10-27 18:00:00,-0.03,45.761821,13.166686,Marano Lagunare
-87,86,LIV_MARE_IGM42,Livello mare IGM42,,m,2025-10-27 18:00:00,-0.03,45.761821,13.166686,Marano Lagunare
-87,48,CAR,Corrente di carica,,mA,2025-10-27 18:00:00,0.0,45.761821,13.166686,Marano Lagunare
-87,49,SCAR,Corrente di scarica,,mA,2025-10-27 18:00:00,167.0,45.761821,13.166686,Marano Lagunare

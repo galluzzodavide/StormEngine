@@ -1,0 +1,27 @@
+station_id,sensor_id,sensor_code,sensor_name,quantity,unit,dt,value,lat,lon,station_name
+212,141,DvMax1s,Direzione vento della velocità massima su 1s,,°N,2026-03-30 16:00:00,78.4666666666667,45.649981,13.752239,Trieste
+212,140,Vvmax1s,Velocità vento massima su 1s,,m/s,2026-03-30 16:00:00,3.44,45.649981,13.752239,Trieste
+212,81,MISxG,Misure xG,,sts,2026-03-30 16:00:00,1.0,45.649981,13.752239,Trieste
+212,85,P_1h,Pioggia oraria,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,58,Prec_48_ore,Precipitazione 48 ore,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,57,Prec_24_ore,Precipitazione 24 ore,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,56,Prec_12_ore,Precipitazione 12 ore,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,55,Prec_6_ore,Precipitazione 6 ore,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,54,Prec_3_ore,Precipitazione 3 ore,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,53,Prec_60_min,Precipitazione 60 min,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,52,Prec_5_min,Precipitazione 5 min,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,49,SCAR,Corrente di scarica,,mA,2026-03-30 16:00:00,79.9333333333333,45.649981,13.752239,Trieste
+212,48,CAR,Corrente di carica,,mA,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,33,VvVett,Velocità vento vettoriale,,m/s,2026-03-30 16:00:00,2.74666666666667,45.649981,13.752239,Trieste
+212,32,DvVett,Direzione vento vettoriale,,°N,2026-03-30 16:00:00,78.5333333333333,45.649981,13.752239,Trieste
+212,30,P,Pluviometro,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
+212,22,Tm,Temperatura mare,,°C,2026-03-30 16:00:00,11.5,45.649981,13.752239,Trieste
+212,18,RG,Radiazione globale,,W/m2,2026-03-30 16:00:00,204.846666666667,45.649981,13.752239,Trieste
+212,17,B,Barometro,,hPa,2026-03-30 16:00:00,1010.9,45.649981,13.752239,Trieste
+212,8,DvMax,Direzione vento della velocità massima,,°N,2026-03-30 16:00:00,78.8666666666667,45.649981,13.752239,Trieste
+212,7,VvMax,Velocità vento massima,,m/s,2026-03-30 16:00:00,5.0,45.649981,13.752239,Trieste
+212,6,Vv,Velocità vento,,m/s,2026-03-30 16:00:00,2.76,45.649981,13.752239,Trieste
+212,5,Dv,Direzione vento,,°N,2026-03-30 16:00:00,78.2666666666667,45.649981,13.752239,Trieste
+212,3,U,Igrometro,,%,2026-03-30 16:00:00,45.5866666666667,45.649981,13.752239,Trieste
+212,2,T,Temperatura aria,,°C,2026-03-30 16:00:00,13.0133333333333,45.649981,13.752239,Trieste
+212,1,RR,RR,,mm,2026-03-30 16:00:00,0.0,45.649981,13.752239,Trieste
