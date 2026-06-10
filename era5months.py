@@ -18,7 +18,7 @@ client = cdsapi.Client(url=CDS_URL, key=CDS_KEY)
 # 2. DEFINIZIONE VARIABILI E LOOP ANNUALE
 # ==========================================
 area_adriatico = [46.5, 12.0, 39.0, 20.0]
-anno = '2025' # Usiamo un anno completo e concluso
+anno = '2022' # Usiamo un anno completo e concluso
 
 # Creiamo le liste dinamiche per tutti i giorni, ore e mesi
 tutti_i_giorni = [str(i).zfill(2) for i in range(1, 32)] # Da '01' a '31'
