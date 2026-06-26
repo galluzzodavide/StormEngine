@@ -1,0 +1,8 @@
+{
+  "variable": "MSL",
+  "unit": "hPa",
+  "year": 2024,
+  "mean": 1016.062255859375,
+  "std": 7.492486476898193,
+  "method": "zscore"
+}
