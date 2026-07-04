@@ -21,24 +21,55 @@ HadISD, MeteoHub, ERA5 reanalysis ────────────┼──�
 
 ## Repository structure
 
-| Folder / File | Purpose |
-|---|---|
-| `ARPAE_emilia/` | Scraper (`ARPAE_emilia.py`) for real-time weather observations from **ARPAE** (Emilia-Romagna), filtered to the coastal area. Outputs `ARPAE_coastal_latest.csv`. |
-| `ARPAM_marche/` | Scraper (`meteohub.py`) for real physical station sensors from **MeteoHub** (Agenzia ItaliaMeteo + Cineca) along the Marche coast. Outputs `ARPAM_coastal_latest.csv`. |
-| `ARPAV_veneto/` | Scraper (`ARPAV-veneto.py`) for real-time station data (temperature, precipitation, humidity, wind, pressure, radiation) from **ARPAV** (Veneto), via its public JSON APIs. Outputs `ARPAV_latest.csv`. |
-| `DPC_friuli/` | Scraper (`DPC-friuli.py`) for real-time station data from the **Protezione Civile FVG** (Friuli Venezia Giulia) monitoring network. Outputs `DPC_latest.csv`. |
-| `HadISD_Adriatic/` | Downloads and processes **HadISD** (Met Office) integrated surface station data for the Adriatic region (sea-level pressure, wind, temperature) for the full year 2024, reformatted to match the ARPA station schema. |
-| `MeteoHub_Adriatic/` | Raw and aggregated station observations pulled from **MeteoHub** for the whole Adriatic coast, plus a notebook that collapses the long-format readings into one row per station with the latest value per variable. |
-| `era5_data.py` | Downloads **ERA5** and **ERA5-Land** reanalysis data (temperature, precipitation, mean sea-level pressure, wind, gusts) over the Adriatic domain from the Copernicus Climate Data Store, month by month for a full year. |
-| `DataAggregation/` | Notebooks that merge and quality-control all data sources before model training. See breakdown below. |
-| `DataAggregation/DPC/` | Merges the regional network CSVs (DPC, ARPAE, ARPAV, ...) into a single, per-station aggregated and flagged dataset, with an accompanying data dictionary and QC plots. |
-| `DataAggregation/ERA5/` | Data-quality assessment of the monthly ERA5 grid files before they are fed to the model. |
-| `DataAggregation/HadISD/` | Full pipeline co-locating ERA5 with HadISD stations, analyzing seasonal bias, and running HadISD data-quality checks. |
-| `DataAggregation/Colocation/` | Co-locates ERA5 grid values with DPC station coordinates via bilinear interpolation, for direct model/observation comparison. |
-| `DataAggregation/Seasonality_ERA5/` | Seasonal analysis of ERA5 reanalysis variables over the full year. |
-| `modelML/` | The forecasting model, split into three stages: **Encoder** (SetConv — converts sparse station data into a gridded representation), **Processor** (spatio-temporal model consuming the gridded representation), and **Decoder** (U-Net — upsamples coarse predictions into 1 km-resolution forecast maps). |
-| `demo/` | Flask web app (`app.py`) serving an interactive map (`templates/`, `static/`) with live AIS ship tracking (`ais_worker.py`) and a cached Open-Meteo forecast overlay for the upper Adriatic. |
-| `stations_map.ipynb` | Notebook that plots all collected weather stations from every network on an interactive map for a quick visual sanity check of spatial coverage. |
+```
+StormEngine/
+├── README.md
+├── era5_data.py                    ← downloads ERA5 / ERA5-Land reanalysis (Copernicus CDS)
+├── stations_map.ipynb              ← plots all collected stations on one map
+│
+├── ARPAE_emilia/                   ← ARPAE (Emilia-Romagna) real-time scraper
+│   ├── ARPAE_emilia.py
+│   └── ARPAE_coastal_latest.csv
+│
+├── ARPAM_marche/                   ← MeteoHub (Marche) real-time scraper
+│   ├── meteohub.py
+│   └── ARPAM_coastal_latest.csv
+│
+├── ARPAV_veneto/                   ← ARPAV (Veneto) real-time scraper
+│   ├── ARPAV-veneto.py
+│   └── ARPAV_latest.csv
+│
+├── DPC_friuli/                     ← Protezione Civile FVG real-time scraper
+│   ├── DPC-friuli.py
+│   └── DPC_latest.csv
+│
+├── HadISD_Adriatic/                ← HadISD (Met Office) station archive downloader
+│   ├── hadisd_adriatic.py
+│   └── adriatic_stations.csv
+│
+├── MeteoHub_Adriatic/              ← MeteoHub bulk station data + aggregation
+│   ├── adriatic_coast_stations.csv
+│   ├── adriatic_coast_stations_aggregated.csv
+│   └── aggregate_meteohub_stations.ipynb
+│
+├── DataAggregation/                ← merge, co-locate & quality-control all sources
+│   ├── DPC/                        ← merges regional network CSVs into one dataset
+│   ├── ERA5/                       ← ERA5 grid data-quality checks
+│   ├── HadISD/                     ← ERA5 x HadISD co-location & bias analysis
+│   ├── Colocation/                 ← ERA5 x DPC station co-location
+│   └── Seasonality_ERA5/           ← seasonal analysis of ERA5 variables
+│
+├── modelML/                        ← forecasting model: Encoder → Processor → Decoder
+│   ├── 01_encoder_setconv.ipynb    ← Stage 1: SetConv encoder (sparse → gridded)
+│   ├── Processor.ipynb             ← Stage 2: spatio-temporal processor
+│   └── Decoder.ipynb               ← Stage 3: U-Net decoder (high-res forecast)
+│
+└── demo/                           ← live demo: ships + forecast on a map
+    ├── app.py                      ← Flask server + Open-Meteo forecast proxy
+    ├── ais_worker.py               ← live AIS ship-tracking listener
+    ├── templates/                  ← HTML page
+    └── static/                     ← front-end JS (map, UI)
+```
 
 ## Data sources
 
