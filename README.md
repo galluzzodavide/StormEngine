@@ -9,7 +9,7 @@ The project collects real-time observations from multiple regional weather netwo
 1. **Collectors** (`ARPAE_emilia/`, `ARPAM_marche/`, `ARPAV_veneto/`, `DPC_friuli/`, `HadISD_Adriatic/`, `MeteoHub_Adriatic/`, `era5_data.py`) pull raw observation/reanalysis data from public sources and normalize it into a common CSV schema (`station_id, sensor_code, dt, value, lat, lon, ...`).
 2. **`DataAggregation/`** merges, cleans, and cross-validates those sources: co-locating station data with the nearest ERA5 grid points, running data-quality checks, and producing the aggregated datasets used for model training.
 3. **`modelML/`** implements the forecasting model itself, a three-stage pipeline that turns irregular point observations into a gridded, high-resolution forecast.
-4. **`demo/`** is a small Flask web application showing the practical use case: live AIS ship positions over the northern Adriatic with an overlaid short-range weather forecast.
+4. **`demo/`** is a small Flask web application showing the practical use case with an overlaid short-range weather forecast.
 
 ## Repository structure
 
@@ -47,7 +47,7 @@ StormEngine/
 ├── DataAggregation/                ← merge, co-locate & quality-control all sources
 │   ├── DPC/                        ← merges regional network CSVs into one dataset
 │   ├── ERA5/                       ← ERA5 grid data-quality checks
-│   ├── HadISD/                     ← ERA5 x HadISD co-location & bias analysis
+│   ├── HadISD/                     ← HadISD quality & bias analysis
 │   ├── Colocation/                 ← ERA5 x DPC station co-location
 │   └── Seasonality_ERA5/           ← seasonal analysis of ERA5 variables
 │
@@ -56,7 +56,7 @@ StormEngine/
 │   ├── Processor.ipynb             ← Stage 2: spatio-temporal processor
 │   └── Decoder.ipynb               ← Stage 3: U-Net decoder (high-res forecast)
 │
-└── demo/                           ← live demo: ships + forecast on a map
+└── demo/                           ← live demo: forecast on a map
     ├── app.py                      ← Flask server + Open-Meteo forecast proxy
     ├── ais_worker.py               ← live AIS ship-tracking listener
     ├── templates/                  ← HTML page
