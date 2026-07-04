@@ -6,14 +6,6 @@ The project collects real-time observations from multiple regional weather netwo
 
 ## How it fits together
 
-```
-Regional networks (ARPAE, ARPAM, ARPAV, DPC) ─┐
-HadISD, MeteoHub, ERA5 reanalysis ────────────┼──▶ DataAggregation ──▶ modelML ──▶ demo
-                                               ┘   (clean, co-locate,   (Encoder →   (live map:
-                                                    QC, aggregate)      Processor →   ships + forecast)
-                                                                        Decoder)
-```
-
 1. **Collectors** (`ARPAE_emilia/`, `ARPAM_marche/`, `ARPAV_veneto/`, `DPC_friuli/`, `HadISD_Adriatic/`, `MeteoHub_Adriatic/`, `era5_data.py`) pull raw observation/reanalysis data from public sources and normalize it into a common CSV schema (`station_id, sensor_code, dt, value, lat, lon, ...`).
 2. **`DataAggregation/`** merges, cleans, and cross-validates those sources: co-locating station data with the nearest ERA5 grid points, running data-quality checks, and producing the aggregated datasets used for model training.
 3. **`modelML/`** implements the forecasting model itself, a three-stage pipeline that turns irregular point observations into a gridded, high-resolution forecast.
