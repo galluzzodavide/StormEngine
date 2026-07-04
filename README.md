@@ -2,7 +2,7 @@
 
 StormEngine is a research pipeline for **short-term, high-resolution weather forecasting over the Adriatic Sea**, with an initial focus on the northern Adriatic coast (Veneto, Friuli Venezia Giulia, Emilia-Romagna, Marche).
 
-The project collects real-time observations from multiple regional weather networks, aggregates and quality-controls them against ERA5 reanalysis and HadISD station data, and uses the result to train a deep-learning downscaling model that turns sparse ground observations into dense, high-resolution forecast maps. A lightweight web demo visualizes live ship traffic and short-range weather forecasts on an interactive map of the upper Adriatic.
+The project collects real-time observations from multiple regional weather networks, aggregates and quality-controls them against ERA5 reanalysis and HadISD station data, and uses the result to train a deep-learning downscaling model that turns sparse ground observations into dense, high-resolution forecast maps. A lightweight web demo visualizes live short-range weather forecasts on an interactive map of the upper Adriatic.
 
 ## How it fits together
 
@@ -93,7 +93,6 @@ StormEngine/
 - [HadISD](https://www.metoffice.gov.uk/hadobs/hadisd/) (Met Office) — integrated surface station archive
 - [ERA5 / ERA5-Land](https://cds.climate.copernicus.eu/) (Copernicus Climate Data Store) — atmospheric reanalysis
 - [Open-Meteo](https://open-meteo.com/) — forecast overlay used in the demo
-- AIS ship-tracking feed — used in the demo for live vessel positions
 
 ## Getting started
 
