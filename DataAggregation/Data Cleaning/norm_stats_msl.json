@@ -1,7 +1,0 @@
-{
-  "variable": "MSL",
-  "unit": "hPa",
-  "mean": 1020.4692406291712,
-  "std": 9.297267589487499,
-  "method": "zscore"
-}
